@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dio.me</title>
+</head>
+<body>
+    <h1 id="inicio">Explicando o que são as Tags e suas funcionalidades.</h1>
+    <hr/>
+    <h2>Indice</h2>
+    <ul>
+        <li> <a href="#surgimento">Surgimento</a></li>
+        <li> <a href="#conceitos">Conceitos</a></li>
+        <li> <a href="#tags">Tags</a></li>
+        <li> <a href="#função">Função</a></li>
+        <br>
+        <ul>
+            <li> <a href="#referencias">Referencias</a></li>
+        </ul>
+    </ul>
+
+    <h2 id="surgimento">(h1) Títulos e Subtítulos (h6)</h2> 
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>As tags <strong><i>h1</i></strong> até <strong><i>h6</i></strong> no <u><mark>HTML</mark></u> são usadas para definir títulos e subtítulos em uma página. <u> <mark>Elas indicam a hierarquia dos conteúdos:</u></mark></p>
+
+    <p> <strong>h1</strong> → <mark>título mais importante</mark> (usado geralmente uma vez por página para o título principal).
+        <br>
+<strong>h2</strong> → subtítulo do <strong>h1</strong>.
+        <br> 
+<strong>h3</strong> → subtítulo do <strong>h2</strong>.
+        <br>
+<strong>h4</strong> → subtítulo do <strong>h3</strong>.
+        <br>
+<strong>h5</strong> → subtítulo do <strong>h4</strong>.
+        <br>
+<strong>h6</strong> → título de menor importância.</p>
+
+    <p>✨ <u>Importância:</u> 
+SEO (Otimização para buscadores): o Google e outros mecanismos de busca usam os títulos para entender a estrutura e relevância da página. <br> <br>
+
+<u>Acessibilidade</u>: leitores de tela usam a hierarquia de títulos para ajudar pessoas com deficiência visual a navegar pelo site. <br> <br>
+
+<u>Organização visual</u>: além do tamanho da fonte que muda automaticamente, a hierarquia ajuda os visitantes a entenderem melhor a estrutura do conteúdo.</p>
+    <p>👉 <u>Resumindo</u>: h1 a h6 servem para estruturar e organizar títulos e subtítulos em ordem de importância.</p>
+
+    <h2 id="conceitos">Tags e seus conceitos (i, u, strong, p, a, )  </h2>
+    <small><a href="#inicio">(voltar)</a></small>
+   
+
+    <p><h4>🔹 (i) — Itálico</h4></p>
+    <ul>
+        <li>Função principal: coloca o texto em itálico.</li>
+        <li>Uso semântico (significado): usado para destacar palavras diferentes do fluxo normal do texto, como:
+            <ol>
+                <li>termos estrangeiros (login, deadline)</li>
+                <li>nomes de livros, músicas, filmes (O Senhor dos Anéis)</li>
+                <li>pensamentos ou vozes internas (“preciso estudar mais...”)</li>
+            </ol>
+        </li>
+        <li>⚠️ Importante: visualmente é parecido com <em>(ênfase)</em>, mas (em) tem mais valor semântico. (i) é mais visual.</li>
+            
+    </ul>
+    <p><h4>🔹 (u) — Sublinhado</h4></p>
+
+    <ul>
+        <li>Função principal: sublinha o texto.</li>
+        <li>Uso semântico (significado): usado para marcar texto não ortodoxo ou que precisa de atenção especial (ex.: erros em uma prova, nomes próprios em dicionários).</li>
+        <li>Problema comum: links já aparecem sublinhados por padrão, então usar (u) pode confundir o usuário.</li>
+    </ul>
+
+    <p><h4>🔹 (strong) — Negrito (ênfase forte)</h4></p>
+    <ul>
+        <li>Função principal: deixa o texto em negrito</li>
+        <li>Uso semântico (significado): indica importância ou urgência.</li>
+        <li>Diferença para (b): (b) deixa em negrito apenas visualmente. Já (strong) informa ao navegador e ao Google que aquele conteúdo é relevante.</li>
+        <li>Acessibilidade: leitores de tela (para deficientes visuais) podem mudar o tom de voz para destacar.</li>
+    </ul>
+    <p><h4>🔹 (p) — Parágrafo</h4></p>
+    <ul>
+        <li>Função principal: cria um bloco de texto separado.</li>
+        <li>Uso semântico (significado): indica que aquele texto é uma ideia ou parágrafo independente.</li>
+        <li>Comportamento padrão: o navegador coloca uma margem automática antes e depois do (p), deixando espaço entre parágrafos</li>
+        <li> Boa prática: sempre use (p) para textos normais. Não é correto apenas quebrar linha com (br) várias vezes.</li>
+    </ul>
+
+    <p><h4>🔹 (a) — Âncora / Link</h4></p>
+    <ul>
+        <li>Função principal: cria links clicáveis.</li>
+        <li>Uso semântico (significado): indica navegação, conexão entre páginas, ou âncoras dentro da própria página.</li>
+        <li>Atributo principal:</li>
+        <ol>
+            <li>href → define o destino do link (pode ser site externo, página interna ou parte da própria página).</li>
+        </ol>
+        <li>Outros atributos importantes:</li>
+        <ol>
+            <li>target = "_blank" → abre o link em uma nova aba.</li>
+            <li>title = "..." → mostra uma dica ao passar o mouse.</li>
+            <li>download → faz o navegador baixar o arquivo em vez de abrir.</li>
+        </ol>
+    </ul>
+
+    <p><h4>🔹Exemplos:</h4></p>
+    <ul>
+        <li>👉 Link externo:</li>
+
+        <li>(a href ="https://www.google.com")Ir para o Google(/a)</li>
+        <br>
+        <li>👉 Link interno (mesma página):</li>
+        <li>(a href ="#contato")Ir para a seção de contato(/a)</li>
+        <br>
+        <li>👉 Link para download:</li>
+        <li>(a href ="curriculo.pdf" download)Baixar Currículo(/a)</li>
+    </ul>
+    <p><h4>Resumo geral com semântica:</h4></p>
+    <ul>
+        <li>(i) → itálico (para termos especiais, estrangeiros, nomes, pensamentos).</li>
+        <li>(u) → sublinhado (para chamar atenção, mas cuidado com links).</li>
+        <li>(strong) → negrito com importância real (SEO e acessibilidade).</li>
+        <li>(p) → cria parágrafo (estrutura e separação de ideias).</li>
+        <li>(a) → cria link (navegação dentro ou fora da página).</li>
+    </ul>
+
+     <h2 id="tags">Tags o que fazem, quando usar e já está ultrapassado (caso de (font)).</h2>
+     <small><a href="#inicio">(voltar)</a></small>
+     
+    <p><h4>🔹 (ol) — Ordered List (Lista ordenada)</h4></p>
+    <ul>
+        <li>Função: cria uma lista numerada ou ordenada.</li>
+        <li>Visual padrão: cada item aparece com números (1, 2, 3...)</li>
+        <li>Uso: quando a ordem dos itens é importante (ex.: receita de bolo, passo a passo, ranking).</li>
+        <li>Atributos importantes:</li>
+        <ol>
+            <li>type → muda o marcador (1, A, a, I, i).</li>
+            <li>start → define de onde a contagem começa.</li>
+        </ol>
+    </ul>
+    <h4>🔹 (ul) — Unordered List (Lista não ordenada)</h4>
+    <ul>
+        <li>Função: cria uma lista com marcadores (bolinhas, quadrados, etc).</li>
+        <li>Uso: quando a ordem não importa (ex.: lista de compras, tópicos soltos).</li>
+        <li>Atributos (quase não usados hoje, mas existem):</li>
+        <ol>
+            <li>type="disc" → bolinha cheia (padrão).</li>
+            <li>type="circle" → bolinha vazia.</li>
+            <li>type="square" → quadradinho.</li>
+        </ol>
+    </ul>
+    <h4>🔹 (li) — List Item (Item da lista)</h4>
+    <ul>
+        <li>Função: representa cada item dentro de (ol) ou (ul).</li>
+        <li>Uso: sempre deve estar dentro de uma lista ((ol) ou (ul)).</li>
+        <li>Pode conter outras tags dentro: texto, imagens, até listas aninhadas.</li>
+    </ul>
+
+    <h4>🔹 (hr) — Horizontal Rule (Linha horizontal)</h4>
+    <ul>
+        <li>Função: insere uma linha horizontal na página.</li>
+        <li>Uso semântico (HTML5): representa uma mudança de contexto ou separação de conteúdo.</li>
+        <li>Visual padrão: uma linha cinza que atravessa a tela.</li>
+        <li>Estilização: hoje em dia é comum usar CSS para personalizar (espessura, cor, estilo tracejado).</li>
+    </ul>
+
+    <h4>🔹 (font) — Fonte de texto (⚠️ tag obsoleta)</h4>
+    <ul>
+        <li>Função (antigamente): mudava a cor, tamanho e tipo de letra do texto.</li>
+        <li>Por que não usar mais: essa tag foi descontinuada no HTML5. Hoje, toda formatação de texto é feita com CSS.</li>
+        <li>Atributos que existiam:</li>
+        <ol>
+            <li>color="red" → definia a cor do texto.</li>
+            <li>size="5" → mudava o tamanho.</li>
+            <li>face="Arial" → escolhia a fonte.</li>
+        </ol>
+    </ul>
+
+    <h4>✅ Resumo final:</h4>
+    <ul>
+        <li>(ol) → lista ordenada (com números/letras).</li>
+        <li>(ul) → lista não ordenada (com bolinhas ou marcadores).</li>
+        <li>(li) → item da lista (sempre dentro de (ol) ou (ul)).</li>
+        <li>(hr) → insere uma linha horizontal (separa conteúdo).</li>
+        <li>(font) → (obsoleto) mudava cor/tamanho/fonte → hoje usamos CSS.</li>
+    </ul>
+
+    
+    <h2 id="função">Tags e suas Função(sub, sup, mark, del, abbr, blockquote)</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <h4>🔹(sub) – Texto Subscrito</h4>
+    <ul>
+        <li>Função: Coloca o texto abaixo da linha normal (subscrito).</li>
+        <li>Uso comum: fórmulas químicas, rodapés ou índices matemáticos</li>
+    </ul>
+
+    <h4>🔹(sup) – Texto Sobrescrito</h4>
+    <ul>
+        <li>Função: Coloca o texto acima da linha normal (sobrescrito).</li>
+        <li>Uso comum: potências matemáticas, expoentes ou notas de rodapé.</li>
+    </ul>
+
+    <h4>🔹(mark) – Texto Marcado</h4>
+    <ul>
+        <li>Função: Destaca o texto como se fosse marcado com marca-texto.</li>
+        <li>Uso comum: dar ênfase em palavras ou destacar trechos importantes.</li>
+    </ul>
+
+    <h4>🔹(del) – Texto Deletado</h4>
+    <ul>
+        <li>Função: Mostra que o texto foi removido ou substituído, ficando riscado.</li>
+        <li>Uso comum: em edições de documentos, preços antigos em promoções.</li>
+    </ul>
+
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>&lt;p&gt;Preço antigo: &lt;del&gt;R$50,00&lt;/del&gt;&lt;/p&gt;</li>
+        <h5>👉 Resultado:</h5>
+        <p>Preço antigo: <del>R$50,00</del></p>
+    </ul>
+
+    <h4>🔹(abbr) - Texto abreviação ou sigla</h4>
+    <ul>
+        <li>Função: Indica que uma palavra é uma abreviação ou sigla.</li>
+        <li>Uso comum: mostrar o significado quando o usuário passa o mouse (tooltip).</li>
+    </ul>
+
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>&lt;p&gt;A &lt;abbr title="Organização das Nações Unidas"&gt;ONU&lt;/abbr&gt; foi criada em 1945.&lt;/p&gt;
+</li>
+        <h5>👉 Resultado:</h5>
+        <p>ONU (ao passar o mouse mostra “Organização das Nações Unidas”)</p>
+    </ul>
+
+    <h4>🔹(blockquote) – Citação Longa</h4>
+    <ul>
+        <li>Função: Usada para citações em bloco, geralmente destacadas do texto normal.</li>
+        <li>Uso comum: quando você quer mostrar uma fala, trecho de livro, artigo etc.</li>
+    </ul>
+
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>&lt;blockquote&gt;
+  "A persistência é o caminho do êxito." – Charles Chaplin
+&lt;/blockquote&gt;</li>
+            <h5>👉 Resultado:</h5>
+        <p>"A persistência é o caminho do êxito." – Charles Chaplin</p>
+    </ul>
+   
+
+    <h4>📌 Resumo Rápido</h4>
+    <ul>
+        <li>(sub) → subscrito (abaixo)</li>
+        <li>(sup) → sobrescrito (acima)</li>
+        <li>(mark) → texto marcado</li>
+        <li>(del) → texto deletado (riscado)</li>
+        <li>(abbr) → sigla/abreviação</li>
+        <li>(blockquote) → citação longa</li>
+    </ul>
+
+    <h2 id="referencias">Referências</h2> 
+    <small><a href="#inicio">(voltar)</a></small><br>
+
+    <h4>
+<a href="https://www.w3schools.com/html/">Documentação HTML</a>
+    </h4>
+    <h4>
+        <a href="https://www.youtube.com/watch?v=48C0Z80W2P0">Tutorial da tags</a>
+    </h4>
+
+</body>
+</html>
